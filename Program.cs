@@ -6,7 +6,8 @@ namespace UnitTestingCs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LogAnalyzer la = new LogAnalyzer();
+            Console.WriteLine(la.IsValidLogFileName(""));
         }
     }
 }
