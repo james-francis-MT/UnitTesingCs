@@ -15,7 +15,7 @@ jobs:
           command: dotnet.exe restore
       - run:
           name: "Run Application Tests"
-          command: dotnet.exe tests
+          command: dotnet.exe test
   build:
     description: Build application with Release configuration
     executor:
