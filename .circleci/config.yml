@@ -16,6 +16,8 @@ jobs:
       - run:
           name: "Run Application Tests"
           command: dotnet.exe test
+     - store_test_results:
+        path: test-results
   build:
     description: Build application with Release configuration
     executor:
